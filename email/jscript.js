@@ -8,16 +8,13 @@ btnEmail.addEventListener("click",function () {
   var emailUtente = document.getElementById('mainEmail').value;
   var emailTrovata = false;
 
-  for (var i = 0; i < email.length; i++) {
+  for (var i = 0; i < email.length && emailTrovata == false; i++) {
     if (emailUtente == email[i]) {
+      emailResult.innerHTML = "la tua email è presente";
       emailTrovata = true;
+    } else {
+      emailResult.innerHTML = "La tua email è assente";
     }
-  }
-
-  if (emailTrovata == true) {
-    emailResult.innerHTML = "la tua email è presente";
-  } else {
-    emailResult.innerHTML = "La tua email è assente";
   }
 
 });
