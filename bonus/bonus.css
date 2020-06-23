@@ -1,0 +1,11 @@
+body{
+  background-image: url("https://mdbootstrap.com/img/Photos/Others/background.jpg");
+  color: #fff;
+}
+
+#contenitore{
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
