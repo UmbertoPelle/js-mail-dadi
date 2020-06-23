@@ -27,10 +27,19 @@ var emailResult = document.getElementById('emailResult');
 btnEmail.addEventListener("click",function () {
   var emailUtente = document.getElementById('mainEmail').value;
 
-  if(email.indexOf(emailUtente) !== -1){
-      emailResult.innerHTML="La tua email è presente";
-    } else{
-      emailResult.innerHTML="La tua email è assente";
+  // if(email.indexOf(emailUtente) !== -1){
+  //     emailResult.innerHTML="La tua email è presente";
+  //   } else{
+  //     emailResult.innerHTML="La tua email è assente";
+  //   }
+
+  for (var i = 0; i < email.length; i++) {
+    if (emailUtente == email[i]) {
+      emailResult.innerHTML = "la tua email è presente";
+      i = email.length + 1;
+    } else {
+      emailResult.innerHTML = "La tua email è assente";
     }
+  }
 
 });
