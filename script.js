@@ -27,12 +27,10 @@ var emailResult = document.getElementById('emailResult');
 btnEmail.addEventListener("click",function () {
   var emailUtente = document.getElementById('mainEmail').value;
 
-  for (var i = 0; i < email.length; i++) {
-    if (email[i] == emailUtente) {
-      emailResult.innerHTML = "Email presente"
-    } else {
-      emailResult.innerHTML = "Email assente"
+  if(email.indexOf(emailUtente) !== -1){
+      emailResult.innerHTML="La tua email è presente";
+    } else{
+      emailResult.innerHTML="La tua email è assente";
     }
-  }
 
 });
