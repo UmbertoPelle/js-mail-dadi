@@ -1,6 +1,7 @@
 body{
   background-image: url("https://mdbootstrap.com/img/Photos/Others/background.jpg");
   color: #fff;
+  text-shadow: 1px 1px black;
 }
 
 #contenitore{
@@ -8,4 +9,12 @@ body{
   margin: auto;
   display: flex;
   justify-content: space-around;
+}
+
+body button{
+  background-color: lightgreen;
+  border: 0;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 5px;
 }
