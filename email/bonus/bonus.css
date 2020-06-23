@@ -4,13 +4,6 @@ body{
   text-shadow: 1px 1px black;
 }
 
-#contenitore{
-  width: 1170px;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-}
-
 body button{
   background-color: lightgreen;
   border: 0;
@@ -19,7 +12,7 @@ body button{
   padding: 5px;
 }
 
-#risultato , #emailResult{
+#emailResult{
   color: red;
   font-size: 30px;
 }
